@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Index from "./index1.jsx"
-import Index1 from "./index.jsx"
+import Index from "./components/index1"
+import Index1 from "./components/index"
 const App = () => {
   return (
     <div>
