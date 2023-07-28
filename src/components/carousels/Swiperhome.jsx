@@ -10,8 +10,13 @@ import Apartments from './assets/image/image 18 (3).png'
 export default function App() {
   return (
     <>
-      <Swiper style={{width:"100%",height:"240px"}}
-        slidesPerView={3}
+      <Swiper
+         slides-per-view={3}
+         breakpoints={{
+           768: {
+             slidesPerView: 3,
+           },
+         }}
         spaceBetween={30}
         pagination={{
           clickable: true,

@@ -7,6 +7,10 @@ import Swiper1 from "./carousels/swiper1"
 import Swiper2 from "./carousels/Swiper2"
 import SwiperHome from "./carousels/Swiperhome"
 import {SearchOutlined ,UserOutlined, TableOutlined}  from "@ant-design/icons"
+import Google from "../assets/image/image 23.png"
+import App from "../assets/image/image 22.png"
+
+
 
 const Index = () => {
 	const navigate = useNavigate()
@@ -86,15 +90,13 @@ const Index = () => {
     </div>
 	<h2 style={{marginTop:"20px"}}>Top Vacation Descriptions</h2>
   <br />
+  <br />
  <Swiper/>
 			</div>
 	<div className="page2">
-    <br /><br /> <br /><br />
-    <br /><br /><br />
-    <h2 style={{marginTop:"20px",color:"black"}}>Offers</h2>
-    <br />
     <Swiper1/>
     <br />
+      <br /><br />
     <SwiperHome/>
     <div className="plan"></div>
     <Swiper2/>
@@ -104,11 +106,22 @@ const Index = () => {
     <div className="iphone">
         
         </div>
-        <div style={{width:"70%"}}>
-           <Button style={{marginRight:"20px"}}>Mobil</Button>
-           <Button>Email</Button>
-           <br /><br />
-           <Input style={{width:"70%"}} />
+        <div className='div1'>
+          <h1 style={{color:"white"}}>Your all-in-one travel app.</h1>
+          <br />
+           <p style={{color:"white"}}>Book flights, hotels, trains & rental cars anywhere in the world in just seconds. Get real-time flight updates, travel info, exclusive deals, and 30% more Trip Coins only on the app!</p>
+           <br />
+          <div style={{display:"flex"}}>
+            <div style={{width:"75%"}}>
+            <Button className='btn'>Mobil</Button>
+           <Button>Email</Button> <br /><br />
+        <div style={{display:"flex",width:"100%"}}>   <Input className='input' placeholder='+91 Mobile Number' /> <Button className='btn1' style={{marginLeft:"-90px",marginTop:"3px"}}>Search</Button></div>
+            </div>
+            <div style={{height:"25%"}}>
+              <img style={{width:"130px",height:"40px"}} src={<Google/>} />
+              <img style={{width:"130px",height:"40px"}} src={<App/>}/>
+            </div>
+          </div>
         </div>
     </div>
 		<div className="footer"></div>

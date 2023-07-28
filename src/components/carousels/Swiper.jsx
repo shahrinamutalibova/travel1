@@ -11,11 +11,16 @@ export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+           slides-per-view={3}
+           breakpoints={{
+             768: {
+               slidesPerView: 3,
+             },
+           }}
+         spaceBetween={30}
+         pagination={{
+           clickable: true,
+         }}
         modules={[Pagination]}
         className="mySwiper"
       >

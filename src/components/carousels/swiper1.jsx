@@ -8,14 +8,19 @@ import Offers from "./Offers"
 export default function App() {
   return (
     <>
-      <Swiper style={{width:"100%",height:"220px"}}
-        slidesPerView={3}
+      <Swiper style={{width:"100%",height:"280px"}}
+        slidesPerView={2}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+          },
+        }}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwip"
       >
         <SwiperSlide style={{height:"180px",borderRadius:"10px"}}>
          <Offers/>

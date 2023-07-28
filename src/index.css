@@ -65,8 +65,17 @@ img{
     padding: 50px;
     padding-top: 0;
   }
-.offers{
-  margin-top: 300px;
+  .Carousel1{
+    width: 100%;
+    height: 420px;
+  }
+.mySwip{
+  margin-top: 100px;
+  height: 260px;
+}
+.mySwiper{
+  width: 100%;
+  height: 240px;
 }
 .app{
   width: 100%;
@@ -84,12 +93,30 @@ img{
   background-size: cover;
   background-repeat: no-repeat;
 }
+.Swipper1 ,.Swipper2{
+  width: 100%;
+  height: 440px;
+}
 @media screen and (max-width:600px){
+  .Swipper2,.Swipper1{
+    width: 100%;
+    height: 360px;
+  }
+  .Swipper2 img{
+    width: 100%;
+    height: 100%;
+  }
   .mySwiper{
     width: 100%;
+    height: 240px;
   }
-  .mySwiper img{
+  .mySwiper1{
     width: 100%;
+    height: 300px;
+  }
+  .mySwiper img ,.mySwiper1 img{
+    width: 100%;
+    height: 100%;
   }
   .swipper{
     width: 100%;
@@ -109,7 +136,7 @@ img{
   height: 35px;
   background-color: white;
   opacity: .4;
- font-size: 10px;
+  font-size: 10px;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
@@ -198,6 +225,11 @@ img{
   background-size: contain;
   margin-top: 20px;
 }
+.Swiptop{
+  width: 100%;
+  height: 440px;
+  margin-top: 280px;
+}
 .footer{
   width:100%;
   height: 45vh;
@@ -205,9 +237,26 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width:600px){
+.div1{
+  width: 70%;
+}
+.input{
+  width:70%;
+  height: 40px;
+  opacity: .4;
+}.btn{
+  margin-right:20px;
+}
+.Swipper{
+  width: 100%;
+  height: 440px;
+}@media screen and (max-width:600px){
   body{
     text-align: center;
+  }
+  .Swipper{
+    width: 100%;
+    height: 360px;
   }
   .navbar{
     gap:20px;
@@ -223,6 +272,10 @@ img{
     flex-wrap: wrap;
     justify-content: center;
   }
+    .Swiptop{
+      width: 100%;
+      height: 360px;
+    }
   .categories div div{
     width:80px;
   }
@@ -230,7 +283,7 @@ img{
     display: none;
   }
   .footer{
-      background-size: contain;
+      background-size: cover;
       height: 80px;
   }
   .iphone{
@@ -238,17 +291,39 @@ img{
   }
   .app{
     flex-wrap: wrap;
+     width: 100%;
   }
-  .mySwiper{
+  .btn{
+    margin-right:0px;
+    margin-bottom: 20px;
+  }
+  .mySwip{
     width: 100%;
+    height: 100px;
   }
-  .mySwiper img{
-    width: 135%;
-    height: 80px;
-    border:1px solid blue;
+  li{
+    display: none;
+  }
+  .swip{
+    font-size: 5px;
+  }
+  .mySwip img{
+   display: none;
+  }
+ 
+  .div1{
+    width: 100%;
+    text-align: center;
+  }
+  .input{
+    display: none;
+  }
+  .btn1{
+    display: none;
   }
 }
 h4 , li{
+  color:black;
 }
 ::-webkit-scrollbar{
   display: none;

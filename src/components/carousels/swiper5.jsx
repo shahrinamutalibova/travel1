@@ -10,17 +10,22 @@ import Apartments from './Ushuaia'
 export default function App() {
   return (
     <>
-      <Swiper style={{width:"100%",height:"420px"}}
-        slidesPerView={3}
+      <Swiper
+        slides-per-view={3}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+          },
+        }}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="Swipper2"
       >
-        <SwiperSlide style={{borderRadius:"10px",height:"400px"}}>{Apartments}</SwiperSlide>
         <SwiperSlide style={{borderRadius:"10px",height:"400px"}}>{Resorts}</SwiperSlide>
+        <SwiperSlide style={{borderRadius:"10px",height:"400px"}}>{Apartments}</SwiperSlide>
         <SwiperSlide style={{borderRadius:"10px",height:"400px"}}>{Villas}</SwiperSlide>
         <SwiperSlide style={{borderRadius:"10px",height:"400px"}}>{Apartments}</SwiperSlide>
         <SwiperSlide style={{borderRadius:"10px",height:"400px"}}>{Resorts}</SwiperSlide>
@@ -28,5 +33,6 @@ export default function App() {
         <SwiperSlide style={{borderRadius:"10px",height:"400px"}}>{Villas}</SwiperSlide>
       </Swiper>
     </>
+    
   );
 }

@@ -84,13 +84,13 @@ const Index = () => {
         <h5>Tropical</h5>
       </div>
     </div>
-      <h2 style={{marginTop:"20px"}}>Top Vacation Descriptions</h2>
-    <Swiper3/>
+      <h2 className='h2' style={{marginTop:"20px"}}>Top Vacation Descriptions</h2>
+    <Swiper3 className="Swiper3"/>
 			</div>
-      <div className="page2">
+      <br /><br />
+          <div className="page2">
     <div className="offers">
       <br />
-    <h2 style={{marginTop:"20px",color:"black",marginLeft:"10px"}}>Offers</h2>
     <br />
     <Swiper4/>
     </div>

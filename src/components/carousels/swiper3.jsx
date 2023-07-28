@@ -9,16 +9,21 @@ import Apartments from './Ushuaia'
 export default function App() {
   return (
     <>
-      <Swiper style={{width:"100%",height:"420px"}}
-        slidesPerView={3}
+      <Swiper
+        slides-per-view={3}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+          },
+        }}      
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="Swipper1"
       >
-        <SwiperSlide className="swipper" style={{height:"400px",borderRadius:"10px"}}>
+        <SwiperSlide style={{height:"400px",borderRadius:"10px"}}>
           {Apartments}
         </SwiperSlide>
         <SwiperSlide style={{height:"400px",borderRadius:"10px"}}>
