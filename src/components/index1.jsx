@@ -9,6 +9,16 @@ import SwiperHome from "./carousels/Swiperhome"
 import {SearchOutlined ,UserOutlined, TableOutlined}  from "@ant-design/icons"
 import Google from "../assets/image/image 23.png"
 import App from "../assets/image/image 22.png"
+import div from "../assets/image/Social.png"
+import Zoom from 'react-reveal/Zoom';
+import Roll from 'react-reveal/Roll';
+import Light from 'react-reveal/LightSpeed';
+import Fade from 'react-reveal/Fade';
+
+
+
+
+
 
 
 
@@ -21,7 +31,8 @@ const Index = () => {
 <div>
 		<div className="page">
 			<div className="page1">
-	<div className='navbar'>
+<Zoom top>
+<div className='navbar'>
 		<div className="logo">trvxl</div>
 		<div className="a">
                <a href="#">Home</a>
@@ -31,9 +42,12 @@ const Index = () => {
 			   <a href="#">Writeups</a>
 		</div>
 		</div>
-			<h1 style={{fontSize:"50px",marginTop:"30px"}}>The whole world <br />awaits.</h1>
-			<div className="opacity">
-			<Input placeholder='Search...' style={{width:"45%"}}/><SearchOutlined style={{marginLeft:"-140px",zIndex:"2",fontSize:"14px"}} />
+</Zoom>
+<Light top>
+<h1 style={{fontSize:"50px",marginTop:"30px"}}>The whole world <br />awaits.</h1>
+</Light>
+<div className="opacity">
+			<Input placeholder='Search...' style={{width:"45%"}}/><SearchOutlined style={{marginLeft:"-140px",zIndex:"2",fontSize:"14px",opacity:".4"}} />
         <div style={{display:"flex",gap:"5px"}}>
         <TableOutlined/>
         <p>change in</p>
@@ -44,9 +58,12 @@ const Index = () => {
        </div>
 			<Button style={{width:"60px",fontSize:"10px",height:"26px",color:"blue",border:"1px solid blue"}}>Search</Button>
 			</div>
-			<h2 style={{marginTop:"20px"}}>Top categories</h2>
+			<Light>
+      <h2 style={{marginTop:"20px"}}>Top categories</h2>
+      </Light>
       <br />
-    <div  className='categories' style={{display:"flex",marginTop:"30px"}}>
+ <Light>
+ <div  className='categories' style={{display:"flex",marginTop:"30px"}}>
       <div>
         <div className='beach'></div>
         <h5>Beaches</h5>
@@ -88,24 +105,36 @@ const Index = () => {
         <h5>Tropical</h5>
       </div>
     </div>
-	<h2 style={{marginTop:"20px"}}>Top Vacation Descriptions</h2>
+ </Light>
+	<Light>
+  <h2 style={{marginTop:"20px"}}>Top Vacation Descriptions</h2>
+  </Light>
   <br />
   <br />
+<Zoom>
  <Swiper/>
-			</div>
+  </Zoom>			
+  </div>
 	<div className="page2">
-    <Swiper1/>
+   <Zoom >
+   <Swiper1/>
+   </Zoom>
     <br />
       <br /><br />
-    <SwiperHome/>
+   <Zoom>
+     <SwiperHome/>
+   </Zoom>
+    <Roll>
     <div className="plan"></div>
+    </Roll>
+    <Zoom>
     <Swiper2/>
+     </Zoom>
       </div>
 	</div>
+    <Fade left>
     <div className="app">
-    <div className="iphone">
-        
-        </div>
+    <div className="iphone"></div>
         <div className='div1'>
           <h1 style={{color:"white"}}>Your all-in-one travel app.</h1>
           <br />
@@ -124,7 +153,41 @@ const Index = () => {
           </div>
         </div>
     </div>
-		<div className="footer"></div>
+    </Fade>
+		<Fade right>
+    <div className="footer">
+     <div className="divs">
+      <div className="divv">
+        <h1>Trxvl</h1>
+      </div>
+     <div className="div2">
+        <a href="#">Seslendirme ve Alt Jazz</a><br />
+        <a href="#">Media Market</a><br />
+        <a href="#">Gillie</a><br />
+        <a href="#">Size Last</a><br />
+      </div>
+      <div className="div3">
+        <a href="#">Self Betimes</a><br />
+        <a href="#">Yatırımcı İlişkileri</a><br />
+        <a href="#">Basal Himmler</a><br />
+      </div>
+      <div className="div4">
+        <a href="#">Yard Market</a><br />
+        <a href="#">Is İmkanları</a><br />
+        <a href="#">Car Tercihleri</a><br />
+      </div>
+      <div className="div5">
+       <a href="#">Hedge Karla</a><br />
+       <a href="#">Mullein Koşulları</a><br />
+       <a href="#">Autumnal Bulgier</a> <br />
+      </div>
+     </div>
+     <div className="divone">
+        <Button>Helmet KOD</Button>
+        <img className='footerimg' src={div} alt="" />
+     </div>
+    </div>
+    </Fade>
 </div>
 	);
 }

@@ -10,11 +10,6 @@ export default function App() {
     <>
       <Swiper
         slidesPerView={2}
-        breakpoints={{
-          768: {
-            slidesPerView: 3,
-          },
-        }}
         spaceBetween={30}
         pagination={{
           clickable: true,
