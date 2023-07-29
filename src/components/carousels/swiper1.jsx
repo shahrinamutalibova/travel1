@@ -8,7 +8,7 @@ import Offers from "./Offers"
 export default function App() {
   return (
     <>
-      <Swiper style={{width:"100%",height:"280px"}}
+      <Swiper
         slidesPerView={2}
         breakpoints={{
           768: {
